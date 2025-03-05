@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+       <title>Membuat Rumus Persegi Panjang</title> 
+       <script type="text/javascript">
+         function hitungluas (){
+            panjang = document.getElementById("txtpanjang").value;
+            lebar = document.getElementById("txtlebar").value;
+            Luas = panjang * lebar;
+            document.getElementById("txtluas").value = Luas; }
+
+       </script>
+    </head>
+    <body>
+        <h2>Menghitung luas persegi Panjang</h2><br>
+        Inputkan Sisi Persegi Panjang <br/>
+        <!--Script ini untuk membuat form input Panjang-->
+        Panjang : <input type="txtpanjang" id="txtpanjang" name="txtpanjang">
+         <!--Script ini untuk membuat form input Lebar-->
+        Lebar : <input type="txtLebar" id="txtlebar" name="txtlebar">
+        <!--Script ini untuk membuat Tombol Hitung Luas-->
+        <br>
+        <input type="button" id="btnHitung" value="Hitung Luas" onclick="hitungluas();">
+        <br>Luas = Panjang * Lebar 
+        <br>
+        <!--Script Untuk Menampilkan Hasil Hitung Luas-->
+        Luas = <input type="txtluas" id="txtluas" name="txtluas">
+    <br> <br>
+    <img src="https://images.bisnis.com/posts/2023/02/25/1631651/2._ini_rumus_luas_persegi_panjang_dan_contoh_soalnya_(dok._nuraini).jpg" height="150" weight="150"><br> 
+    <br>
+    <a href="index.html"><img src="https://i.pinimg.com/originals/a8/8a/8c/a88a8cd82ccd942fe3593d73fc1fb8f7.png" width="50"></a>
+        <br>HOME
+        
+
+    </body>
+
+    
+        
+        
+    
+</html>

@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Web Memasukkan Nilai</title>
+
+
+    <script type="text/javascript">
+         function hitungnilai() {
+            var nilai = parseFloat(document.getElementById("nilai").value);
+            var grade = "";
+            var status="";
+            if (isNaN(nilai) || nilai < 1 || nilai > 100)  {
+                // If diatas supaya angka yg bisa di proses hanya angka dari 1-100
+         status = "Nilai Ulangan Hanya 1-100";
+               grade= "";
+    }else if(nilai >= 95){
+        
+        grade= "A+";
+        status= "Selamat Anda lulus";
+    }else if(nilai >= 90){
+        grade= "A";
+        status= "Selamat Anda lulus ";
+    } else if(nilai >= 85){
+        grade= "B+";
+        status= "Selamat Anda lulus ";
+    }else if(nilai >= 80){
+        grade= "B";
+        status= "Selamat Anda lulus t";
+    }else if(nilai >= 75){
+        grade= "C";
+        status= "Selamat Anda lulus ";
+    }else { 
+        grade= "Remidi";
+        status= "Maaf Anda belum lulus" ;
+    }   
+    document.getElementById("grade").value = grade;
+    document.getElementById("status").value = status;
+     }
+    </script>
+
+       
+    
+
+</head>
+<body>
+    <h2>Web Predikat Nilai Akhir</h2>
+    <form>
+        <br><br>
+   Input nilai :
+    <input type="text" autofocus placeholder="Input Nilai Anda" required id="nilai" name="nilai" style="text-align: center; "><br>
+<input type="button" id="htgnilai" value="Cari Grade" onclick="hitungnilai()" style="background-color: lime;">
+<br>
+Hasil Grade : <input type="grade" id="grade" name="grade" style="text-align: center;" size="1">
+<input type="text" id="status" name="status" style="text-align: center;" style="font-size:xx-small;">
+
+<br>
+
+
+<input type="reset" id="reset" name="reset" style="background-color: red;" ><br><br><br>
+<a href="Biodata.html" style="color: black;">About Me</a><br>
+<a href="index.html"><img src="https://i.pinimg.com/originals/a8/8a/8c/a88a8cd82ccd942fe3593d73fc1fb8f7.png" width="50"></a>
+      <br>HOME
+
+</form>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

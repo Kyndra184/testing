@@ -1,0 +1,40 @@
+<html>
+</script>
+<title>Membuat Rumus Luas Segitiga</title>
+<meta http-equiv="content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript">
+    function hitungLuas2() {
+
+        Alas = document.getElementById("txtAlas").value;
+        Tinggi2 = document.getElementById("txtTinggi2").value;
+        Luas2 = Alas * Tinggi2 / 2;
+        document.getElementById("txtLuas2").value = Luas2;
+    }
+</script>
+<body>
+<form>
+  <h2>Menghitung luas Segitiga</h2><br>
+  Inputkan Alas Dan Tinggi Segitiga<br />
+  <!--Script ini untuk membuat form input Alas-->
+  Alas : <input type="txtAlas" id="txtAlas" name="txtAlas">
+  <!--Script ini untuk membuat form input Tinggi-->
+  Tinggi : <input type="txtTinggi2" id="txtTinggi2" name="txtTinggi2">
+  <br>
+  <!--Script ini untuk membuat Tombol Hitung Luas-->
+  <br>
+  <input type="button" id="btnHitung" value="Hitung Luas"  
+      onclick="hitungLuas2();">
+  <br>
+  Luas = Alas * Tinggi / 2
+  <br>
+  <!--Script Untuk Menampilkan HAsil Hitung Luas-->
+  Luas = <input type="txtLuas2" id="txtLuas2" name="txtLuas2">
+  <br>
+  <img src="file:///C:/Users/indra/OneDrive/Pictures/Screenshots/Screenshot%202024-10-09%20100545.png"height="150" weight="150"><br>
+  <a href="index.html"><img src="https://i.pinimg.com/originals/a8/8a/8c/a88a8cd82ccd942fe3593d73fc1fb8f7.png" width="50"></a>
+        <br>HOME
+
+
+</body>
+
+</html>

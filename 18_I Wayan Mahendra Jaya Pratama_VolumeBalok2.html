@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+       <title>Membuat Rumus Volume Balok</title> 
+       <meta http-equiv="content-Type" content="text/html; charset=iso-8859-1">
+       <script type="text/javascript">
+         function hitungVolume (){
+            Panjang = document.getElementById("txtPanjang").value;
+            Lebar = document.getElementById("txtLebar").value;
+            Tinggi = document.getElementById("txtTinggi").value;
+            Volume = Panjang * Lebar * Tinggi;
+            document.getElementById("txtVolume").value = Volume; }
+       </script>
+    </head>
+    <body>
+        <h2>Menghitung Volume Balok</h2><br>
+Inputkan Panjang Lebar Dan Tinggi <br>
+        <!--Script ini untuk membuat form input Panjang-->
+        Panjang : <input type="txtPanjang" id="txtPanjang" name="txtPanjang">
+    
+        <!--Script ini untuk membuat form input lebar-->
+        Lebar   : <input type="txtLebar" id="txtLebar" name="txtLebar">
+        
+        <!--Script ini untuk membuat form input Tinggi-->
+        Tinggi  : <input type="txtTinggi" id="txtTinggi" name="txtTinggi">
+        <br>
+          <!--Script ini untuk membuat Tombol Hitung Luas-->
+          <br>
+        <input type="button" id="btnHitung" value="Hitung Volume" onclick="hitungVolume();">
+    <br>
+        Volume = Panjang * Lebar * Tinggi
+    <br>
+        <!--Script Untuk Menampilkan HAsil Hitung Luas-->
+        Volume = <input type="txtVolume" id="txtVolume" name="txtVolume">
+    <br> <br>
+    <img src="https://rumusrumus.com/wp-content/uploads/2015/11/Balok.png"height=100 weight="100"><br>
+    <a href="index.html"><img src="https://i.pinimg.com/originals/a8/8a/8c/a88a8cd82ccd942fe3593d73fc1fb8f7.png" width="50"></a>
+        <br>HOME
+        
+    </body>
+
+    
+        
+        
+    
+</html>
